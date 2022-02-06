@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=en class="index">
+    <head>
+        <meta charset="UTF-8">
+        <title> Landing page</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" type="image/jpg" href="images/flaticon.jpg"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> <!--añadir libreria de iconos-->
+    </head>
+
+    <body>
+        <header class="grid-container">
+            <h3>LOGO PRINCIPAL</h3>
+            <p><a href="tel:666123456">666123456</a></p>
+        </header>
+
+        <nav>
+        </nav>
+
+        <main>
+            <div id="cabecera" class="amarillo grid-container">
+                <div id="contenedorTexto" class="grid-container">
+                    <h1 id="titulo">Impresión 3D en gran formato para empresas</h1>
+                    <div id="rapidez" class="bloque-valores">
+                        <i class="logo fab fa-facebook-square"></i>
+                        <div class="text-valores">
+                            <h2>Rapidez</h2>
+                            <p>Tienes tu pieza o producto disponible en 48h</p>
+                        </div>
+                    </div>
+                    <div id="tecnologia" class="bloque-valores grid-container">
+                        <i class="logo fa-facebook-square"></i>
+                        <div >
+                            <h2 class="def-valores">Tecnología</h2>
+                            <p class="text-valores">Impresión con las últimas tecnologías</p>
+                        </div>
+                    </div>
+                    <div id="calidad" class="bloque-valores">
+                        <i class="logo fa-facebook-square"></i>
+                        <div class="text-valores">
+                            <h2>Calidad</h2>
+                            <p>Acabados permenorizados de alta calidad</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenedorForm">
+                    <h3>Contacta con nosotros</h3>
+                    <form class="grid-container">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+
+            <section id="servicios">
+                <div class="fondo-gris"><h2>Nuestros servicios de impresión 3D</h2></div>
+                <div id="contenedorServicios" class="grid-container">
+                    <div class="servicio" id="s1">
+                        <img src="images/img.jpg" alt="Servicio1">
+                        <div class="fondo-gris"><h3>Prototipos rápidos</h3></div>
+                        <div class="servicio-info fondo-grisClaro" id="s-info-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt eu orci ut faucibus. Sed eget nulla id mi eleifend maximus quis et libero.
+                                Suspendisse congue tempor leo id faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras felis metus, efficitur nec augue eget, rutrum eleifend dui. </p>
+                        </div>
+                    </div>
+
+                    <div class="servicio" id="s2">
+                        <img src="images/img.jpg" alt="Servicio2">
+                        <div class="fondo-gris"><h3>Utillajes para a fabricación</h3></div>
+                        <div class="servicio-info fondo-grisClaro" id="s-info-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt eu orci ut faucibus. Sed eget nulla id mi eleifend maximus quis et libero.
+                                Suspendisse congue tempor leo id faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras felis metus, efficitur nec augue eget, rutrum eleifend dui.
+                                Nunc gravida pellentesque convallis. Duis viverra leo vitae magna aliquam bibendum. </p>
+                        </div>
+                    </div>
+
+                    <div class="servicio" id="s3">
+                        <img src="images/img.jpg" alt="Servicio3">
+                        <div class="fondo-gris"><h3>Piezas finales y series cortas</h3></div>
+                        <div class="servicio-info fondo-grisClaro" id="s-info-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt eu orci ut faucibus. Sed eget nulla id mi eleifend maximus quis et libero.
+                                Suspendisse congue tempor leo id faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras felis metus, efficitur nec augue eget, rutrum eleifend dui.
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class= "tecnologias">
+                <h3>Tecnologías de impresión 3D</h3>
+                <hr>
+                <ul class="col-tecn grid-container">
+                    <li>Estereolitografía (SLA)</li>
+                    <li>Sinterizado de poliamida (SLS)</li>
+                    <li>Deposición de hilo (FDM)</li>
+                    <li>Coladas al Vacío (moldes silicona)</li>
+                    <li>Reaction Injection Moulding (RIM)</li>
+                    <li>HP MultiJet Fusion</li>
+                </ul>
+            </section>
+
+            <footer class="fondo-gris grid-container">
+                <div id="logo-footer"> <p>LOGO</p></div>
+                <ul id="enlaces">
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://es.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </footer>
+
+        </main>
+    </body>
+</html>

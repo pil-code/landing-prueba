@@ -1,0 +1,203 @@
+*{
+    line-height: 1.5;
+    margin:0cm;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(31, 43, 43);
+    font-size: 1.5em;
+}
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(31, 43, 43);
+    font-size: 100%;
+}
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    color: orange;
+    font-size: 100%;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    color:ghostwhite;
+    font-size: 75%;
+}
+.grid-container{
+    display:grid;
+
+}
+/****************HEADER*******************/
+header{
+    grid-template-columns: 50% 50%;
+}
+header h3{
+
+}
+/****************CABECERA AMARILLA*******************/
+.amarillo{
+    background-color:goldenrod;
+}
+
+#cabecera{
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items:center;
+    justify-content: space-evenly;
+}
+/** BLOQUE VALORES**/
+#contenedorTexto{
+    margin:50px;
+    grid-template-rows:3fr repeat(3, 2fr);
+}
+.bloque-valores{
+    display: inline-flex;
+    align-items:center;
+}
+
+i {
+    font-size: 1.3em;
+    padding-right: 5%;
+}
+.bloque-valores h2 {
+    color:darkslategrey;
+}
+
+/** FORMULARIO **/
+#contenedorForm{
+    background-color: lemonchiffon;
+    padding: 20px;
+    margin:50px;
+}
+input, textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: slategray;
+    min-width: 200px;
+    padding:2px 2px;
+    margin: 5px;
+    border: none;
+}
+input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: white;
+    background-color: orange;
+    border:orange 1px solid;
+    border-radius: 10%;
+    width: 50px;
+    min-width: 20px;
+}
+
+/****************NUESTROS SERVICIOS*******************/
+
+.fondo-gris{
+    background-color: darkslategrey;
+    padding:20px;
+}
+.fondo-gris h2 {
+    color:white;
+    text-align: center;
+}
+.inline-grid-container{
+    display:inline-grid;
+}
+#contenedorServicios{
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.servicio{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+.fondo-grisClaro{
+    background-color:rgb(129, 125, 125);
+    padding:20px;
+}
+
+/****************TECNOLOGIAS*******************/
+.tecnologias{
+    background-color: gainsboro;
+    padding:20px 100px;
+}
+.col-tecn{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ul.col-tecn li{
+    padding-right: 20px;
+}
+
+/****************FOOTER*******************/
+footer{
+    grid-template-columns: 50% 50%;
+}
+#enlaces li{
+    list-style: none;
+}
+#enlaces i{
+    color:white;
+}
+#enlaces a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    display: inline-flex;
+    justify-content: space-around;
+}
+#enlaces li{
+    align-content: space-around;
+    display: inline;
+}
+
+/***************** IPAD MINI ****************/
+@media (max-width: 768px) {
+    #contenedorServicios{
+        margin:0 20% 4%;
+        grid-template-columns: 100%;
+        row-gap: 1%;
+        height: 100%;
+    }
+
+    .col-tecn{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/***************** IPHONE SE ****************/
+@media (max-width: 375px) {
+    header{
+        margin: 0 10%;
+    }
+    header p{
+        justify-self:end;
+
+    }
+    #cabecera{
+        grid-template-columns: 100%;
+    }
+    #contenedorTexto {
+        margin: 20px;
+    }
+    #contenedorServicios{
+        margin:0 0 6% 0;
+        grid-template-columns: 100%;
+        row-gap: 1%;
+        height: 100%;
+    }
+    .tecnologias {
+        background-color: gainsboro;
+        padding: 21px 0px;
+    }
+    .tecnologias h3{
+        text-align: center;
+    }
+    footer{
+       grid-template-columns: 20% 80%; 
+    }
+    ul#enlaces{
+        display:grid;
+        justify-content: start;
+    }
+}
